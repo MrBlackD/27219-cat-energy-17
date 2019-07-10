@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Денис Комягин](https://up.htmlacademy.ru/adaptive/17/user/27219).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Колотович](https://htmlacademy.ru/profile/id225353)
 
 ---
 
