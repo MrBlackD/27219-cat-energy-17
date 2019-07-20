@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald:400,500,700&display=swap&subset=cyrillic");
 @import "normalize.less";
 @import "header.less";
 @import "visually-hidden.less";
@@ -12,6 +11,20 @@
 @import "product.less";
 @import "hamburger-button.less";
 @import "social-buttons.less";
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: normal;
+  src: url("../fonts/oswaldregular.woff") format("woff"),
+    url("../fonts/oswaldregular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: bold;
+  src: url("../fonts/oswaldmedium.woff") format("woff"),
+    url("../fonts/oswaldmedium.woff2") format("woff2");
+}
 
 body {
   font-family: "Oswald", "PT Sans", sans-serif;
