@@ -3,26 +3,45 @@
   <head>
     <meta charset="utf-8" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
 
   <body>
     <header class="header">
-      <a class="header__image-link" href="index.html">
-        <img
-          class="header__logo"
-          src="http://placehold.it/191x39"
-          alt="Логотип магазина Cat energy"
-        />
-      </a>
-      <button class="header__button hamburger-button">меню</button>
+      <div class="header__logo">
+        <a class="header__image-link" href="index.html">
+          <img
+            class="header__logo-image"
+            src="http://placehold.it/191x39"
+            alt="Логотип магазина Cat energy"
+          />
+        </a>
+        <button class="header__button hamburger-button">
+          <span class="visually-hidden">меню</span>
+        </button>
+      </div>
+      <nav class="header__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__list-item">
+            <a class="navigation__link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__link" href="catalog.html"
+              >Каталог продукции</a
+            >
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <h1 class="visually-hidden">Интернет магазин для котов - Cat energy</h1>
       <section class="choose-programm">
         <div class="choose-programm__background">
           <span class="visually-hidden">Фоновая картинка</span>
-
           <h2 class="choose-programm__title">
             Функциональное питание для котов
           </h2>
@@ -39,9 +58,9 @@
           Подобрать программу
         </a>
       </section>
-      <section>
+      <section class="food-program">
         <h2 class="visually-hidden">Программы питания</h2>
-        <div class="food-program">
+        <div class="food-program__item">
           <h3 class="food-program__title food-program__title_weight-loss">
             Похудение
           </h3>
@@ -54,7 +73,7 @@
             Каталог Slim
           </a>
         </div>
-        <div class="food-program">
+        <div class="food-program__item">
           <h3 class="food-program__title food-program__title_weight-gain">
             Набор массы
           </h3>
@@ -93,7 +112,6 @@
           alt="Логотип магазина Cat energy"
         />
       </a>
-      <div class="footer__title">Cat energy</div>
       <ul class="footer__social social-buttons">
         <li class="social-buttons__vk"><span>Вконтакте</span></li>
         <li class="social-buttons__instagram"><span>Инстаграм</span></li>

@@ -1,3 +1,16 @@
 .social-buttons {
-  color: #000000; // это временно, чтобы пройти линтер, пока не начали стилизацию этого элемента
+  margin: 0;
+
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 22px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .social-buttons {
+    padding: 0;
+  }
 }

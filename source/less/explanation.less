@@ -1,6 +1,8 @@
 .explanation {
   padding-top: 12px;
+  margin: 0 auto;
   margin-bottom: 40px;
+  width: 320px;
 }
 
 .explanation__title {
@@ -28,4 +30,51 @@
 
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .explanation {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .explanation__title {
+    font-size: 60px;
+    font-weight: 500;
+  }
+
+  .explanation__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .explanation__list-item {
+    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 120px;
+    padding: 0;
+    padding-top: 120px;
+    width: 250px;
+  }
+
+  .explanation__list-item:nth-child(2n-1) {
+    margin-right: 180px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .explanation {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .explanation__list-item {
+    box-sizing: border-box;
+    width: 300px;
+    margin: 0;
+  }
+
+  .explanation__list-item:nth-child(2n-1) {
+    margin-right: 0;
+  }
 }
