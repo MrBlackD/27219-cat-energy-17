@@ -1,11 +1,14 @@
 .choose-programm {
   color: #ffffff;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .choose-programm__title {
   font-size: 36px;
   line-height: 36px;
   text-align: center;
+  font-weight: 400;
 
   margin-top: 0;
   margin-bottom: 20px;
@@ -32,4 +35,50 @@
 
   margin: 0 auto;
   margin-top: -135px;
+}
+
+@media (min-width: @tablet-width) {
+  .choose-programm {
+    margin: 0 auto;
+    margin-bottom: 80px;
+    width: 768px;
+    min-height: 710px;
+  }
+
+  .choose-programm__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: #111111;
+    text-align: left;
+
+    width: 430px;
+  }
+
+  .choose-programm__description {
+    color: #111111;
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .choose-programm__background {
+    background: none;
+    height: auto;
+  }
+
+  .choose-programm__button {
+    padding: 16px 28px;
+    width: auto;
+  }
+
+  .choose-programm__image {
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .choose-programm {
+    width: 1200px;
+  }
 }

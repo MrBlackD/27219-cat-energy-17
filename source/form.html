@@ -3,19 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Подбор программы - HTML Academy: Кэт энерджи</title>
   </head>
 
   <body>
     <header class="header">
-      <a class="header__image-link" href="index.html">
-        <img
-          class="header__logo"
-          src="http://placehold.it/191x39"
-          alt="Логотип магазина Cat energy"
-        />
-      </a>
-      <button class="header__button hamburger-button">меню</button>
+      <div class="header__logo">
+        <a class="header__image-link" href="index.html">
+          <img
+            class="header__logo-image"
+            src="http://placehold.it/191x39"
+            alt="Логотип магазина Cat energy"
+          />
+        </a>
+        <button class="header__button hamburger-button">
+          <span class="visually-hidden">меню</span>
+        </button>
+      </div>
+      <nav class="header__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__list-item">
+            <a class="navigation__link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__link" href="catalog.html"
+              >Каталог продукции</a
+            >
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <footer class="footer">
       <a class="footer__image-link" href="index.html">
@@ -25,7 +45,6 @@
           alt="Логотип магазина Cat energy"
         />
       </a>
-      <div class="footer__title">Cat energy</div>
       <ul class="footer__social social-buttons">
         <li class="social-buttons__vk"><span>Вконтакте</span></li>
         <li class="social-buttons__instagram"><span>Инстаграм</span></li>
