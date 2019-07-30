@@ -7,6 +7,9 @@
 
   width: 320px;
   margin: 0 auto;
+  padding: 0 20px;
+
+  box-sizing: border-box;
 }
 
 .footer__image-link {
@@ -28,10 +31,36 @@
   line-height: 16px;
   color: #444444;
   font-family: "Arial", sans-serif;
+
+  text-decoration: none;
 }
 
 .footer__academy {
   padding: 22px 0;
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.footer__academy-logo {
+  width: 27px;
+  height: 34px;
+}
+
+.footer__logo {
+  width: 128px;
+  height: 24px;
+}
+
+.footer__academy-logo {
+  background-image: url(./img/htmlacademy.svg);
+  background-size: cover;
+
+  width: 34px;
+  height: 34px;
 }
 
 @media (min-width: @tablet-width) {
@@ -56,10 +85,20 @@
     border: none;
     padding: 0;
   }
+
+  .footer__social {
+    width: 100px;
+  }
+
+  .footer__academy {
+    width: 156px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .footer {
-    width: 1200px;
+    width: @desktop-width;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }

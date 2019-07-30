@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="./js/app.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
@@ -13,18 +14,18 @@
         <a class="header__image-link" href="index.html">
           <img
             class="header__logo-image"
-            src="http://placehold.it/191x39"
+            src="./img/logo-mobile.svg"
             alt="Логотип магазина Cat energy"
           />
         </a>
         <button class="header__button hamburger-button">
-          <span class="visually-hidden">меню</span>
+          <span class="visually-hidden">Меню</span>
         </button>
       </div>
-      <nav class="header__navigation navigation">
+      <nav class="header__navigation navigation navigation_collapsed navigation_index">
         <ul class="navigation__list">
           <li class="navigation__list-item">
-            <a class="navigation__link" href="index.html">Главная</a>
+            <a class="navigation__link navigation__link_active" href="index.html">Главная</a>
           </li>
           <li class="navigation__list-item">
             <a class="navigation__link" href="catalog.html"
@@ -88,17 +89,21 @@
         <h2 class="explanation__title">Как это работает</h2>
         <ul class="explanation__list">
           <li class="explanation__list-item explanation__list-item_leaf">
+            <span class="explanation__list-item-number">1</span>
             Функциональное питание содержит только полезные питательные
             вещества.
           </li>
           <li class="explanation__list-item explanation__list-item_water">
+              <span class="explanation__list-item-number">2</span>
             Выпускается в виде порошка, который нужно лишь залить кипятком и
             готово.
           </li>
           <li class="explanation__list-item explanation__list-item_cutlery">
+              <span class="explanation__list-item-number">3</span>
             Замените один-два приема обычной еды на наше функциональное питание.
           </li>
           <li class="explanation__list-item explanation__list-item_clock">
+              <span class="explanation__list-item-number">4</span>
             Уже через месяц наслаждайтесь изменениями клучшему вашего питомца!
           </li>
         </ul>
@@ -108,14 +113,14 @@
       <a class="footer__image-link" href="index.html">
         <img
           class="footer__logo"
-          src="http://placehold.it/128x24"
+          src="./img/logo-footer.svg"
           alt="Логотип магазина Cat energy"
         />
       </a>
       <ul class="footer__social social-buttons">
-        <li class="social-buttons__vk"><span>Вконтакте</span></li>
-        <li class="social-buttons__instagram"><span>Инстаграм</span></li>
-        <li class="social-buttons__fb"><span>Фейсбук</span></li>
+        <li class="social-buttons__vk"><span class="visually-hidden">Вконтакте</span></li>
+        <li class="social-buttons__instagram"><span class="visually-hidden">Инстаграм</span></li>
+        <li class="social-buttons__fb"><span class="visually-hidden">Фейсбук</span></li>
       </ul>
       <div class="footer__academy">
         <a
@@ -125,12 +130,11 @@
           HTML Academy
         </a>
         <a
-          class="footer__image-link"
+          class="footer__academy-logo"
           href="https://htmlacademy.ru/intensive/adaptive"
         >
           <img
-            class="footer__academy-logo"
-            src="http://placehold.it/27x34"
+            src="./img/htmlacademy.svg"
             alt="Логотип HTML Academy"
           />
         </a>

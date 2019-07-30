@@ -2,6 +2,10 @@
   color: #ffffff;
   width: 320px;
   margin: 0 auto;
+  margin-bottom: 22px;
+  padding: 0 20px;
+
+  box-sizing: border-box;
 }
 
 .choose-programm__title {
@@ -27,6 +31,9 @@
 
   height: 305px;
   padding-top: 30px;
+  margin-left: -20px;
+  margin-right: -20px;
+
   box-sizing: border-box;
 }
 
@@ -35,14 +42,18 @@
 
   margin: 0 auto;
   margin-top: -135px;
+  margin-bottom: 3px;
 }
 
 @media (min-width: @tablet-width) {
   .choose-programm {
     margin: 0 auto;
-    margin-bottom: 80px;
     width: 768px;
     min-height: 710px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    position: relative;
   }
 
   .choose-programm__title {
@@ -52,6 +63,8 @@
     text-align: left;
 
     width: 430px;
+    margin-left: 90px;
+    margin-bottom: 33px;
   }
 
   .choose-programm__description {
@@ -59,26 +72,74 @@
     text-align: left;
     font-size: 20px;
     line-height: 20px;
+    text-transform: uppercase;
+
+    margin-left: 90px;
+    margin-bottom: 20px;
   }
 
   .choose-programm__background {
     background: none;
+
     height: auto;
+    margin: 0;
+    padding: 0;
   }
 
   .choose-programm__button {
     padding: 16px 28px;
     width: auto;
+    margin-left: 90px;
+
+    position: absolute;
+    top: 210px;
   }
 
   .choose-programm__image {
-    position: absolute;
+    position: relative;
     z-index: -1;
+
+    width: 709px;
+    height: 609px;
+    margin: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .choose-programm {
-    width: 1200px;
+    width: @desktop-width;
+
+    display: flex;
+  }
+
+  .choose-programm__button {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .choose-programm__image {
+    width: 552px;
+    height: 500px;
+
+    position: absolute;
+    top: 0;
+    left: 492px;
+  }
+
+  .choose-programm::after {
+    content: "";
+    position: absolute;
+    top: -172px;
+    right: 0;
+
+    display: block;
+    width: 720px;
+    height: 696px;
+
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-color: #65aa39;
+
+    z-index: -2;
   }
 }

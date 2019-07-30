@@ -2,23 +2,30 @@
   font-size: 36px;
   line-height: 60px;
   color: #111111;
-  font-weight: 400px;
+  font-weight: 400;
 
-  padding-top: 30px;
-  padding-bottom: 34px;
-
+  padding: 24px 20px 30px 20px;
   width: 320px;
   margin: 0 auto;
+  border-bottom: 1px solid #ededed;
+
+  box-sizing: border-box;
 }
 
 @media (min-width: @tablet-width) {
   .catalog-title {
     width: 768px;
+    padding: 0 30px;
+    border-bottom: none;
+
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .catalog-title {
-    width: 1200px;
+    width: @desktop-width;
+    padding-left: 110px;
   }
 }

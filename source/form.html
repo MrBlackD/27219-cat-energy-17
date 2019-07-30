@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="./js/app.js"></script>
     <title>Подбор программы - HTML Academy: Кэт энерджи</title>
   </head>
 
@@ -13,15 +14,15 @@
         <a class="header__image-link" href="index.html">
           <img
             class="header__logo-image"
-            src="http://placehold.it/191x39"
+            src="./img/logo-mobile.svg"
             alt="Логотип магазина Cat energy"
           />
         </a>
         <button class="header__button hamburger-button">
-          <span class="visually-hidden">меню</span>
+          <span class="visually-hidden">Меню</span>
         </button>
       </div>
-      <nav class="header__navigation navigation">
+      <nav class="header__navigation navigation navigation_collapsed">
         <ul class="navigation__list">
           <li class="navigation__list-item">
             <a class="navigation__link" href="index.html">Главная</a>
@@ -31,7 +32,7 @@
               >Каталог продукции</a
             >
           </li>
-          <li class="navigation__list-item">
+          <li class="navigation__list-item navigation__link_active">
             <a class="navigation__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
@@ -41,14 +42,14 @@
       <a class="footer__image-link" href="index.html">
         <img
           class="footer__logo"
-          src="http://placehold.it/128x24"
+          src="./img/logo-footer.svg"
           alt="Логотип магазина Cat energy"
         />
       </a>
       <ul class="footer__social social-buttons">
-        <li class="social-buttons__vk"><span>Вконтакте</span></li>
-        <li class="social-buttons__instagram"><span>Инстаграм</span></li>
-        <li class="social-buttons__fb"><span>Фейсбук</span></li>
+        <li class="social-buttons__vk"><span class="visually-hidden">Вконтакте</span></li>
+        <li class="social-buttons__instagram"><span class="visually-hidden">Инстаграм</span></li>
+        <li class="social-buttons__fb"><span class="visually-hidden">Фейсбук</span></li>
       </ul>
       <div class="footer__academy">
         <a
@@ -58,12 +59,11 @@
           HTML Academy
         </a>
         <a
-          class="footer__image-link"
+          class="footer__academy-logo"
           href="https://htmlacademy.ru/intensive/adaptive"
         >
           <img
-            class="footer__academy-logo"
-            src="http://placehold.it/27x34"
+            src="./img/htmlacademy.svg"
             alt="Логотип HTML Academy"
           />
         </a>

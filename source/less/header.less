@@ -4,6 +4,7 @@
 
   width: 320px;
   margin: 0 auto;
+  border-bottom: 1px solid #ededed;
 }
 
 .header__logo {
@@ -19,14 +20,11 @@
   align-self: center;
 
   margin-left: auto;
+}
 
-  background-image: url("../img/icon-mobile-menu.svg");
-  background-repeat: no-repeat;
-  background-color: transparent;
-
-  border: none;
-  width: 25px;
-  height: 20px;
+.header__logo-image {
+  width: 191px;
+  height: 39px;
 }
 
 .header__image-link {
@@ -39,10 +37,16 @@
     align-items: center;
 
     width: 768px;
+    padding: 24px 30px 0 30px;
+    margin-bottom: 60px;
+    border-bottom: none;
+    box-sizing: border-box;
   }
 
   .header__logo {
-    padding-top: 24px;
+    padding: 0;
+    width: 174px;
+    height: 59px;
   }
 
   .header__button {
@@ -56,6 +60,9 @@
 
 @media (min-width: @desktop-width) {
   .header {
-    width: 1200px;
+    width: @desktop-width;
+    padding-top: 53px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }

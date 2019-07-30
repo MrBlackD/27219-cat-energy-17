@@ -1,12 +1,25 @@
+.product {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .product__title {
   font-size: 16px;
   line-height: 20px;
   color: #111111;
+  text-decoration: none;
+
+  width: 72px;
+  display: inline-block;
+  margin-top: 25px;
+  margin-bottom: 18px;
 }
 
 .product__details {
   font-size: 12px;
   line-height: 16px;
+
+  flex-grow: 1;
 }
 
 .product__link_button {
@@ -14,9 +27,84 @@
   line-height: 20px;
 }
 
-.product__volume,
-.product__taste,
-.product__price {
+.product__label {
+  position: relative;
+
   color: #444444;
   font-family: "Arial", sans-serif;
+
+  margin: 0;
+}
+
+.product__label-value {
+  position: absolute;
+  right: 0;
+}
+
+.product__photo {
+  width: 140px;
+  height: 144px;
+}
+
+.product__link-photo {
+  width: 140px;
+  height: 144px;
+}
+
+@media (min-width: @tablet-width) {
+  .product {
+    box-sizing: border-box;
+    padding: 0 38px 40px 38px;
+    margin-top: 140px;
+
+    background-color: #efebeb;
+
+    flex-direction: column;
+  }
+
+  .product__photo {
+    width: 195px;
+    height: 208px;
+  }
+
+  .product__link-photo {
+    width: 195px;
+    height: 208px;
+    margin: 0 auto;
+    margin-top: -82px;
+    margin-bottom: 36px;
+  }
+
+  .product__title {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+
+    width: 140px;
+    margin: 0;
+    margin-bottom: 28px;
+  }
+
+  .product__details {
+    text-align: center;
+
+    margin-bottom: 33px;
+  }
+
+  .product__label {
+    text-align: left;
+
+    font-size: 16px;
+    line-height: 16px;
+
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 6px;
+    padding-top: 6px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product__link-photo {
+    margin-left: -8px;
+  }
 }
