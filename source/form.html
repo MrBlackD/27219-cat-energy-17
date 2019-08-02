@@ -12,11 +12,18 @@
     <header class="header">
       <div class="header__logo">
         <a class="header__image-link" href="index.html">
-          <img
-            class="header__logo-image"
-            src="./img/logo-mobile.svg"
-            alt="Логотип магазина Cat energy"
-          />
+          <picture>
+            <source
+              media="(min-width:1300px)"
+              srcset="./img/logo-desktop.svg"
+            />
+            <source media="(min-width:768px)" srcset="./img/logo-tablet.svg" />
+            <img
+              class="header__logo-image"
+              src="./img/logo-mobile.svg"
+              alt="Логотип магазина Cat energy"
+            />
+          </picture>
         </a>
         <button class="header__button hamburger-button">
           <span class="visually-hidden">Меню</span>
@@ -47,9 +54,21 @@
         />
       </a>
       <ul class="footer__social social-buttons">
-        <li class="social-buttons__vk"><span class="visually-hidden">Вконтакте</span></li>
-        <li class="social-buttons__instagram"><span class="visually-hidden">Инстаграм</span></li>
-        <li class="social-buttons__fb"><span class="visually-hidden">Фейсбук</span></li>
+        <li class="social-buttons__vk">
+          <a class="social-buttons__vk-link" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social-buttons__instagram">
+          <a class="social-buttons__instagram-link" href="#">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+        </li>
+        <li class="social-buttons__fb">
+          <a class="social-buttons__fb-link" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
       </ul>
       <div class="footer__academy">
         <a
