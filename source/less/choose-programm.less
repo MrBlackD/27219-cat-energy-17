@@ -1,9 +1,9 @@
 .choose-programm {
   color: #ffffff;
-  width: 320px;
+  // width: 320px;
   margin: 0 auto;
   margin-bottom: 22px;
-  padding: 0 20px;
+  // padding: 0 20px;
 
   box-sizing: border-box;
 }
@@ -38,11 +38,12 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: #65aa39;
+  background-position: center;
 
   height: 305px;
-  width: 320px;
+  width: 100%;
   z-index: -1;
-  margin-left: -20px;
+  margin-left: 0;
   position: absolute;
 }
 
@@ -52,6 +53,17 @@
   margin: 0 auto;
   margin-top: -139px;
   margin-bottom: 3px;
+}
+
+.choose-programm__container{
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.choose-programm__button{
+  width: 280px;
+  margin: 0 auto;
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
