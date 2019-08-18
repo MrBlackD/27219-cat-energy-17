@@ -1,0 +1,230 @@
+.additional__title {
+  color: #111111;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
+  padding-left: 18px;
+  width: 249px;
+  background-color: #ffffff;
+}
+
+.additional__list-item-title {
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.additional__list-item-amount {
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  margin-bottom: 13px;
+}
+
+.additional__list-item-price {
+  margin-left: auto;
+}
+
+.additional__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 39px;
+}
+
+.additional__list-item {
+  box-sizing: border-box;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 14px;
+  border-top: 1px solid #cccccc;
+  padding-bottom: 17px;
+}
+
+.additional__list-item:last-child {
+  border-bottom: 1px solid #cccccc;
+}
+
+.additional__title-wrapper {
+  margin-bottom: 40px;
+}
+
+.additional__list-item-button {
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 9px;
+}
+
+.additional__gift {
+  margin: 0 auto;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  height: 289px;
+  width: 280px;
+  box-sizing: border-box;
+  padding: 0 58px;
+  padding-top: 170px;
+  position: relative;
+  margin-bottom: 37px;
+}
+
+.additional__gift::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../img/icon-gift.svg");
+  width: 56px;
+  height: 61px;
+  top: 64px;
+  left: 112px;
+}
+
+.additional__gift-text {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .additional {
+    margin-bottom: 76px;
+  }
+
+  .additional__title {
+    font-size: 36px;
+    line-height: 36px;
+    width: 374px;
+    margin-left: 29px;
+    padding-left: 38px;
+  }
+
+  .additional__list-item {
+    width: 708px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #cccccc;
+    padding-top: 26px;
+    padding-left: 37px;
+    padding-right: 36px;
+    padding-bottom: 26px;
+  }
+
+  .additional__list-item-title {
+    flex-grow: 1;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+
+  .additional__list-item-amount {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    margin-top: 4px;
+  }
+
+  .additional__title-wrapper {
+    margin-bottom: 91px;
+  }
+
+  .additional__list-item-price {
+    margin-left: 52px;
+  }
+
+  .additional__gift {
+    width: 708px;
+    height: 200px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    padding-top: 56px;
+    padding-left: 423px;
+  }
+
+  .additional__gift::after {
+    left: 90px;
+  }
+
+  .additional__gift-text {
+    text-align: left;
+  }
+
+  .additional__list {
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional {
+    margin-bottom: 16px;
+  }
+
+  .additional__title {
+    padding-left: 39px;
+    margin-left: 0;
+  }
+
+  .additional__list {
+    margin-left: 40px;
+  }
+
+  .additional__list-item {
+    width: 895px;
+    border: none;
+    border-top: 1px solid #cccccc;
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 16px;
+  }
+
+  .additional__list-item-title {
+    flex-grow: 0;
+    margin: 0;
+    width: 325px;
+  }
+
+  .additional__list-item-amount {
+    width: 289px;
+    margin-right: 36px;
+  }
+
+  .additional__list-item-price {
+    margin-left: auto;
+    width: 46px;
+  }
+
+  .additional__list-item-button {
+    width: 245px;
+    margin-top: -10px;
+  }
+
+  .additional__content {
+    display: flex;
+    width: 1300px;
+    margin: 0 auto;
+  }
+
+  .additional__gift {
+    width: 245px;
+    height: 289px;
+    margin: 0;
+    padding: 0;
+    margin-left: 81px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
+
+  .additional__gift-text {
+    text-align: center;
+    padding-top: 171px;
+  }
+
+  .additional__gift::after {
+    left: 94px;
+  }
+}

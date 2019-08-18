@@ -1,6 +1,7 @@
 .catalog {
   width: 320px;
   margin: 0 auto;
+  margin-bottom: 38px;
 }
 
 .catalog__list {
@@ -11,11 +12,32 @@
 }
 
 .catalog__list-item {
-  padding: 25px 20px;
+  padding: 22px 20px;
+  padding-top: 0;
+
+  border-bottom: 1px solid #ededed;
 }
 
 .catalog__more {
-  padding-top: 82px;
+  padding-top: 62px;
+
+  position: relative;
+}
+
+.catalog__more::after {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: 50%;
+
+  display: block;
+  margin-left: -15px;
+  width: 31px;
+  height: 31px;
+
+  background-image: url("../img/icon-plus-mobile.svg");
+
+  opacity: 0.2;
 }
 
 .catalog__more-title {
@@ -23,6 +45,7 @@
   line-height: 20px;
   text-align: center;
   color: #111111;
+  text-transform: uppercase;
 
   margin-bottom: 10px;
 }
@@ -35,17 +58,25 @@
   font-family: "Arial", sans-serif;
 
   margin-bottom: 22px;
+  margin-top: 0;
 }
 
 .catalog__more-link {
   font-size: 16px;
   line-height: 20px;
   color: #444444;
+
+  background-color: #f2f2f2;
 }
 
 @media (min-width: @tablet-width) {
   .catalog {
     width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 89px;
+
+    box-sizing: border-box;
   }
 
   .catalog__list {
@@ -56,12 +87,55 @@
 
   .catalog__list-item {
     width: 324px;
+
+    position: relative;
+  }
+
+  .catalog__more {
+    width: 324px;
+    margin-top: 140px;
+
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 164px;
+    border: 1px solid #efebeb;
+
+    box-sizing: border-box;
+  }
+
+  .catalog__more::after {
+    top: 55px;
+
+    margin-left: -30px;
+    width: 61px;
+    height: 61px;
+
+    background-image: url("../img/icon-plus.svg");
+  }
+
+  .catalog__more-title {
+    font-size: 20px;
+
+    width: 140px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+  }
+
+  .catalog__more-text {
+    font-size: 16px;
+
+    margin: 0 auto;
+    margin-bottom: 85px;
+    width: 180px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .catalog {
-    width: 1200px;
+    width: @desktop-width;
+    padding: 0 40px;
+    margin-bottom: 96px;
+    box-sizing: border-box;
   }
 
   .catalog__list-item {

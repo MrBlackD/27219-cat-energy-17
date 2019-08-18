@@ -1,7 +1,11 @@
 .choose-programm {
   color: #ffffff;
-  width: 320px;
+  // width: 320px;
   margin: 0 auto;
+  margin-bottom: 22px;
+  // padding: 0 20px;
+
+  box-sizing: border-box;
 }
 
 .choose-programm__title {
@@ -11,38 +15,66 @@
   font-weight: 400;
 
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 }
 
 .choose-programm__description {
   font-size: 14px;
   line-height: 14px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .choose-programm__background {
+  height: 305px;
+  padding-top: 26px;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  box-sizing: border-box;
+}
+
+.choose-programm__background-image {
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: #65aa39;
+  background-position: center;
 
   height: 305px;
-  padding-top: 30px;
-  box-sizing: border-box;
+  width: 100%;
+  z-index: -1;
+  margin-left: 0;
+  position: absolute;
 }
 
 .choose-programm__image {
   display: block;
 
   margin: 0 auto;
-  margin-top: -135px;
+  margin-top: -139px;
+  margin-bottom: 3px;
+}
+
+.choose-programm__container {
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.choose-programm__button {
+  width: 280px;
+  margin: 0 auto;
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
   .choose-programm {
     margin: 0 auto;
-    margin-bottom: 80px;
     width: 768px;
     min-height: 710px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    position: relative;
   }
 
   .choose-programm__title {
@@ -52,6 +84,8 @@
     text-align: left;
 
     width: 430px;
+    margin-left: 67px;
+    margin-bottom: 41px;
   }
 
   .choose-programm__description {
@@ -59,26 +93,105 @@
     text-align: left;
     font-size: 20px;
     line-height: 20px;
+
+    margin-left: 68px;
+    margin-bottom: 20px;
   }
 
   .choose-programm__background {
     background: none;
+
     height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .choose-programm__background-image {
+    display: none;
   }
 
   .choose-programm__button {
-    padding: 16px 28px;
+    line-height: 20px;
+    font-size: 20px;
+
+    padding: 16px 27px;
     width: auto;
+    margin-left: 68px;
+
+    position: absolute;
+    top: 229px;
   }
 
   .choose-programm__image {
-    position: absolute;
+    position: relative;
     z-index: -1;
+
+    width: 709px;
+    height: 609px;
+    margin: 0;
+    margin-left: -21px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .choose-programm {
-    width: 1200px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    min-height: 608px;
+
+    display: flex;
+  }
+
+  .choose-programm__title {
+    margin-left: 0;
+    margin-top: 52px;
+    margin-bottom: 42px;
+  }
+
+  .choose-programm__description {
+    margin-left: 0;
+  }
+
+  .choose-programm__container {
+    width: 1300px;
+    padding: 0 120px;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .choose-programm__button {
+    font-size: 20px;
+    line-height: 20px;
+
+    top: 286px;
+
+    margin-left: 0;
+  }
+
+  .choose-programm__image {
+    width: 552px;
+    height: 500px;
+
+    position: absolute;
+    top: -28px;
+    left: 511px;
+  }
+
+  .choose-programm__background-image {
+    display: block;
+    max-width: 720px;
+    height: 696px;
+
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-color: #65aa39;
+
+    z-index: -2;
+
+    width: 50%;
+    margin-left: 50%;
+    top: -170px;
   }
 }
