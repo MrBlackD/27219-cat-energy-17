@@ -68,6 +68,30 @@
           </div>
           <picture>
             <source
+              type="image/webp"
+              media="(min-width:1300px)"
+              srcset="
+                ./img/index-can-desktop@1x.webp 1x,
+                ./img/index-can-desktop@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width:768px)"
+              srcset="
+                ./img/index-can-tablet@1x.webp 1x,
+                ./img/index-can-tablet@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width:320px)"
+              srcset="
+                ./img/index-can-mobile@1x.webp 1x,
+                ./img/index-can-mobile@2x.webp 2x
+              "
+            />
+            <source
               media="(min-width:1300px)"
               srcset="
                 ./img/index-can-desktop@1x.png 1x,
@@ -181,6 +205,7 @@
         </div>
       </section>
       <section class="info info_index">
+        <h2 class="visually-hidden">Дополнительная информация</h2>
         <div class="info__content">
           <p class="info__invite">
             приглашаем <br />
@@ -193,6 +218,7 @@
         </div>
       </section>
       <section class="map">
+        <h2 class="visually-hidden">Карта с местоположением магазина</h2>
         <iframe
           class="map__frame"
           src="https://yandex.ru/map-widget/v1/-/CBF9nKAJWA"
