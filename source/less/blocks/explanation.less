@@ -1,0 +1,167 @@
+.explanation {
+  padding: 0 20px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 320px;
+
+  box-sizing: border-box;
+}
+
+.explanation__title {
+  font-size: 36px;
+  line-height: 60px;
+  color: #111111;
+  font-weight: 400;
+
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.explanation__list {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.explanation__list-item {
+  padding: 6px;
+  padding-left: 80px;
+  margin-bottom: 14px;
+
+  color: #444444;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+
+  position: relative;
+}
+
+.explanation__list-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+
+  background-color: #68b738;
+
+  width: 60px;
+  height: 60px;
+}
+
+.explanation__list-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+
+  background-position: center;
+
+  width: 60px;
+  height: 60px;
+}
+
+.explanation__list-item_leaf::after {
+  background-image: url("../img/advantage-leaf@1x.png");
+}
+
+.explanation__list-item_water::after {
+  background-image: url("../img/advantage-powder@1x.png");
+}
+
+.explanation__list-item_cutlery::after {
+  background-image: url("../img/advantage-dining@1x.png");
+}
+
+.explanation__list-item_clock::after {
+  background-image: url("../img/advantage-clock@1x.png");
+}
+
+.explanation__list-item-number {
+  display: none;
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+@media (min-width: @tablet-width) {
+  .explanation {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  .explanation__title {
+    font-size: 60px;
+
+    margin-bottom: 64px;
+  }
+
+  .explanation__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .explanation__list-item {
+    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 125px;
+    padding: 0;
+    padding-top: 120px;
+    width: 250px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .explanation__list-item:nth-child(2n-1) {
+    margin-right: 134px;
+  }
+
+  .explanation__list-item::after,
+  .explanation__list-item::before {
+    width: 80px;
+    height: 80px;
+
+    top: 8px;
+
+    background-repeat: no-repeat;
+  }
+
+  .explanation__list-item_leaf:first-child .explanation__list-item-number {
+    right: 21px;
+  }
+
+  .explanation__list-item-number {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+
+    line-height: 207px;
+    font-size: 281px;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .explanation {
+    width: @desktop-width;
+    margin: 0 auto;
+    margin-bottom: 128px;
+    padding: 0 40px;
+  }
+
+  .explanation__list {
+    justify-content: space-between;
+  }
+
+  .explanation__list-item {
+    box-sizing: border-box;
+    width: 245px;
+    margin: 0;
+  }
+
+  .explanation__list-item:nth-child(2n-1) {
+    margin-right: 0;
+  }
+}
