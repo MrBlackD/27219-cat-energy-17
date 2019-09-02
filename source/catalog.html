@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="./js/picturefill.min.js"></script>
+    <script src="./js/svgxuse.min.js"></script>
     <script src="./js/app.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Каталог - HTML Academy: Кэт энерджи</title>
@@ -646,16 +648,25 @@
         <ul class="footer__social social-buttons">
           <li class="social-buttons__vk">
             <a class="social-buttons__vk-link" href="#">
+              <svg class="social-buttons__vk-icon">
+                <use xlink:href="./img/img.svg#icon-vk"></use>
+              </svg>
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social-buttons__instagram">
             <a class="social-buttons__instagram-link" href="#">
+              <svg class="social-buttons__instagram-icon">
+                <use xlink:href="./img/img.svg#icon-insta"></use>
+              </svg>
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
           <li class="social-buttons__fb">
             <a class="social-buttons__fb-link" href="#">
+              <svg class="social-buttons__fb-icon">
+                <use xlink:href="./img/img.svg#icon-fb"></use>
+              </svg>
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
@@ -671,7 +682,9 @@
             class="footer__academy-logo"
             href="https://htmlacademy.ru/intensive/adaptive"
           >
-            <img src="./img/htmlacademy.svg" alt="Логотип HTML Academy" />
+            <svg class="footer__academy-logo-img">
+              <use xlink:href="./img/img.svg#htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>
