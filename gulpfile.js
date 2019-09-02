@@ -40,6 +40,17 @@ gulp.task("server", function() {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
+gulp.task("build-server", function() {
+  server.init({
+    server: "build/",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
+  });
+});
+
+
 gulp.task("start", gulp.series("css", "server"));
 
 function buildHtml() {
