@@ -16,6 +16,11 @@
   background-color: #ffffff;
 }
 
+.additional__list-item-content {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .additional__list-item-title {
   font-size: 16px;
   line-height: 16px;
@@ -47,7 +52,6 @@
 
 .additional__list-item {
   box-sizing: border-box;
-  width: 280px;
   margin: 0 auto;
   padding-top: 14px;
   border-top: 1px solid #cccccc;
@@ -110,6 +114,12 @@
     margin-bottom: 76px;
   }
 
+  .additional__list-item-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .additional__title {
     font-size: 36px;
     line-height: 36px;
@@ -152,6 +162,8 @@
 
   .additional__list-item-price {
     margin-left: 52px;
+    width: 44px;
+    text-align: right;
   }
 
   .additional__gift {
@@ -160,6 +172,7 @@
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     padding-top: 56px;
     padding-left: 423px;
+    background-color: #7cc053;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/gift-photo-tablet@2x.jpg");
@@ -216,7 +229,8 @@
 
   .additional__list-item-price {
     margin-left: auto;
-    width: 48px;
+    width: 46px;
+    text-align: left;
   }
 
   .additional__list-item-button {
