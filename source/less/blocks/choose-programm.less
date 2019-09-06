@@ -13,8 +13,10 @@
   text-align: center;
   font-weight: 400;
 
+  margin: 0 auto;
   margin-top: 0;
   margin-bottom: 26px;
+  width: 320px;
 }
 
 .choose-programm__description {
@@ -46,8 +48,8 @@
   position: absolute;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/index-background-mobile@2x.jpg");
-    background-size: 320px auto;
+    background-image: url("../img/index-background-mobile@2x.jpg"), linear-gradient(to right, #68a93e, #68a93e 50%, #63a73a 50%, #63a73a);
+    background-size: contain;
   }
 }
 

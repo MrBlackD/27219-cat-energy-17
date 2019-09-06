@@ -27,12 +27,12 @@
             />
           </picture>
         </a>
-        <button class="header__button hamburger-button">
+        <button class="header__button hamburger-button hamburger-button__no-js">
           <span class="visually-hidden">Меню</span>
         </button>
       </div>
       <nav
-        class="header__navigation navigation navigation_index"
+        class="header__navigation navigation navigation_collapsed navigation__no-js navigation_index"
       >
         <ul class="navigation__list">
           <li class="navigation__list-item">
@@ -201,9 +201,9 @@
             <div class="live-example__tumbler">
               <button class="live-example__tumbler-text">Было</button>
               <div class="live-example__tumbler-line">
-                  <div class="live-example__tumbler-control" tabindex="0">
-                    <span class="visually-hidden">Переключатель слайдов</span>
-                  </div>
+                <div class="live-example__tumbler-control" tabindex="0">
+                  <span class="visually-hidden">Переключатель слайдов</span>
+                </div>
               </div>
               <button class="live-example__tumbler-text">Стало</button>
             </div>
@@ -220,12 +220,14 @@
           </p>
         </div>
       </section>
-      <section class="map">
+      <section class="map map__no-js">
         <h2 class="visually-hidden">Карта с местоположением магазина</h2>
-        <iframe
-          class="map__frame"
-          src="https://yandex.ru/map-widget/v1/-/CBF9nKAJWA"
-        ></iframe>
+        <div class="map__wrapper">
+          <iframe
+            class="map__frame"
+            src="https://yandex.ru/map-widget/v1/-/CBF9nKAJWA"
+          ></iframe>
+        </div>
       </section>
     </main>
     <footer class="footer">

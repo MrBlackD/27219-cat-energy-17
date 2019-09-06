@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" />
     <script src="./js/picturefill.min.js"></script>
     <script src="./js/svgxuse.min.js"></script>
     <script src="./js/app.js"></script>
@@ -26,11 +27,13 @@
             />
           </picture>
         </a>
-        <button class="header__button hamburger-button">
+        <button class="header__button hamburger-button hamburger-button__no-js">
           <span class="visually-hidden">Меню</span>
         </button>
       </div>
-      <nav class="header__navigation navigation navigation_collapsed">
+      <nav
+        class="header__navigation navigation navigation_collapsed navigation__no-js"
+      >
         <ul class="navigation__list">
           <li class="navigation__list-item">
             <a class="navigation__link" href="index.html">Главная</a>
@@ -237,12 +240,14 @@
           </p>
         </div>
       </section>
-      <section class="map">
+      <section class="map map__no-js">
         <h2 class="visually-hidden">Карта с местоположением магазина</h2>
-        <iframe
-          class="map__frame"
-          src="https://yandex.ru/map-widget/v1/-/CBF9nKAJWA"
-        ></iframe>
+        <div class="map__wrapper">
+          <iframe
+            class="map__frame"
+            src="https://yandex.ru/map-widget/v1/-/CBF9nKAJWA"
+          ></iframe>
+        </div>
       </section>
     </main>
     <footer class="footer">

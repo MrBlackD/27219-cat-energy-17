@@ -1,5 +1,6 @@
 .map {
   min-width: 320px;
+  background-color: #fdf7f1;
 }
 
 .map__frame {
@@ -10,8 +11,81 @@
   margin-bottom: -5px;
 }
 
+.map__wrapper {
+  width: auto;
+}
+
+.map__no-js .map__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.map__no-js .map__frame {
+  background-image: url("../../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: -38px;
+  background-size: cover;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../../img/bg-map-mobile@2x.png");
+  }
+}
+
+.map__no-js .map__wrapper::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/map-pin.png");
+  width: 58px;
+  height: 49px;
+  top: 140px;
+  left: 131px;
+  background-size: contain;
+}
+
 @media (min-width: @tablet-width) {
   .map__frame {
     height: 400px;
+  }
+
+  .map__no-js .map__wrapper {
+    width: 768px;
+  }
+
+  .map__no-js .map__wrapper::after {
+    width: 130px;
+    height: 108px;
+    top: 154px;
+    left: 321px;
+  }
+
+  .map__no-js .map__frame {
+    background-image: url("../../img/bg-map-tablet@1x.png");
+    background-position-y: 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/bg-map-tablet@2x.png");
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map__no-js .map__frame {
+    background-image: url("../../img/bg-map-desktop@1x.png");
+    background-position-y: 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/bg-map-desktop@2x.png");
+    }
+  }
+
+  .map__no-js .map__wrapper {
+    width: 1300px;
+  }
+
+  .map__no-js .map__wrapper::after {
+    top: 150px;
+    left: 926px;
   }
 }
